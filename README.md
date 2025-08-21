@@ -22,6 +22,27 @@
 -   **身份验证**: Flask-Login
 -   **管理后台**: Flask-Admin (可选)
 
+
+## 项目文件结构
+echo. > app.py
+flask-personal-blog/
+├── app.py                 # 应用主入口/工厂函数
+├── requirements.txt       # 项目依赖列表
+├── .flaskenv             # Flask 开发环境变量配置
+├── venv/                 # Python 虚拟环境 (忽略)
+├── instance/             # 实例文件夹 (存放数据库、配置)
+│   └── blog.db          # SQLite 数据库文件 (自动生成)
+├── static/               # 静态文件 (CSS, JS, images)
+│   ├── css/
+│   ├── js/
+│   └── images/
+└── templates/            # Jinja2 HTML 模板
+    ├── base.html        # 基础模板
+    ├── index.html       # 首页
+    ├── post.html        # 文章详情页
+    ├── create_edit_post.html # 创建/编辑文章页
+    └── ...              # 其他模板
+
 ## 开发环境设置 (Windows 10)
 
 ### 1.  prerequisites
